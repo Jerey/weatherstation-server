@@ -1,7 +1,9 @@
-FROM ubuntu 
+FROM ubuntu:21.10
 
 #no-cache since the cache would make the image bigger than needed.
-RUN apt-get update && apt-get install --no-install-recommends -y \ 
+RUN apt-get update && \
+apt-get upgrade -y && \
+apt-get install --no-install-recommends -y \ 
 python3-setuptools \
 python3 \ 
 python3-pip \
