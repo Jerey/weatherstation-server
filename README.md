@@ -1,5 +1,7 @@
 # Weatherstation - Server
 
+[![CI to docker hub](https://github.com/Jerey/weatherstation-server/actions/workflows/master.yml/badge.svg)](https://github.com/Jerey/weatherstation-server/actions/workflows/master.yml)
+
 This project provides a server for a weatherstation.
 It subscribes to various MQTT topics, stores the retrieved data based on the content and visualizes it.
 
