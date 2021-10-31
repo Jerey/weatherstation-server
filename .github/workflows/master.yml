@@ -5,8 +5,30 @@ on:
     branches: [ master ]
 
 jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out Repo 
+        uses: actions/checkout@v2
+
+  test:
+    needs: setup
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./webserver
+    steps:
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Install dependencies
+        run: npm ci
+      - run: npm test
+
 
   build:
+    needs: test
     runs-on: ubuntu-latest
     steps:
     
