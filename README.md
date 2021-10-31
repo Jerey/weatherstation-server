@@ -1,7 +1,5 @@
 # Weatherstation - Server
 
-[![Build Status](https://travis-ci.com/jerey/weatherstation-server.svg?branch=master)](https://travis-ci.com/jerey/weatherstation-server)
-
 This project provides a server for a weatherstation.
 It subscribes to various MQTT topics, stores the retrieved data based on the content and visualizes it.
 
