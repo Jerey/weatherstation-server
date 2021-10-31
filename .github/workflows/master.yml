@@ -28,7 +28,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./webserver
-          file: ./Dockerfile
+          file: ./webserver/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/weatherstation-server:latest
           
@@ -42,7 +42,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./datahandler
-          file: ./Dockerfile
+          file: ./datahandler/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/weatherstation-datahandler:latest
           
