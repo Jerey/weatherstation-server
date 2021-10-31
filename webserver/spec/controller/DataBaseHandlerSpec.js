@@ -71,6 +71,7 @@ describe("Accessing the mastertable successfully ", function () {
       );
       expect(error).toBe(null);
       expect(result).toBe(true);
+      expect(true).toBe(false);
     });
   });
 });
