@@ -1,4 +1,4 @@
-FROM ubuntu:21.10
+FROM ubuntu:22.04
 
 #no-cache since the cache would make the image bigger than needed.
 RUN apt-get update && \

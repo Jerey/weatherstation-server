@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   db:
-    image: mariadb:10.3
+    image: mariadb:jammy
     restart: always
     volumes:
       - /docker/weatherstation/data:/var/lib/mysql
